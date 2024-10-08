@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .mainmenubtn {
+    background-color: rgb(98, 0, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;  
+}
+.mainmenubtn:hover {
+    background-color: rgb(194, 129, 255);
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: rgb(194, 129, 255);
+    min-width: 200px;
+}
+
+.dropdown-child a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-child a:hover {
+    background-color: rgb(98, 0, 255);
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="mainmenubtn">Main Menu</button>
+        <div class="dropdown-child">
+          <a href="#">Sub Menu 1</a>
+          <a href="#">Sub Menu 2</a>
+          <a href="#">Sub Menu 3</a>
+          <a href="#">Sub Menu 4</a>
+          <a href="#">Sub Menu 5</a>
+        </div>
+      </div>
+</body>
+</html>
